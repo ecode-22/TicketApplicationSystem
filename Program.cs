@@ -6,6 +6,7 @@ namespace TicketApplicationSystem
     static class Program
     {
         /// <summary>
+        ///   This is v 1.2
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
