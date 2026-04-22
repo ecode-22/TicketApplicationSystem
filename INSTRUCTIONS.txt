@@ -1,0 +1,265 @@
+===============================================================================
+   TICKET APPLICATION SYSTEM - SETUP AND USAGE INSTRUCTIONS
+===============================================================================
+
+PROJECT INFORMATION
+-------------------
+Course: Software design and testing C# (SDT621)
+Project: Week 2 Friday Project
+Due Date: 24 April 2026 @ 11:00 AM
+
+===============================================================================
+HOW TO OPEN THE PROJECT IN VISUAL STUDIO
+===============================================================================
+
+METHOD 1: Open Solution File (RECOMMENDED)
+------------------------------------------
+1. Locate the file: TicketApplicationSystem.sln
+2. Double-click the .sln file
+3. Visual Studio will open automatically
+4. Wait for the solution to load
+5. Press F5 or click the green "Start" button to run
+
+METHOD 2: Open from Visual Studio
+---------------------------------
+1. Open Visual Studio
+2. Click "File" → "Open" → "Project/Solution"
+3. Navigate to the project folder
+4. Select "TicketApplicationSystem.sln"
+5. Click "Open"
+6. Press F5 to run the application
+
+===============================================================================
+PROJECT FILE STRUCTURE
+===============================================================================
+
+TicketApplicationSystem/
+│
+├── TicketApplicationSystem.sln      ← OPEN THIS FILE IN VISUAL STUDIO
+├── TicketApplicationSystem.csproj
+│
+├── Form1.cs                          (Main form code)
+├── Form1.Designer.cs                 (UI design - auto-generated)
+├── Form1.resx                        (Form resources)
+├── TicketCalculator.cs               (Business logic)
+├── Program.cs                        (Entry point)
+├── App.config                        (Configuration)
+│
+├── Properties/
+│   ├── AssemblyInfo.cs
+│   ├── Resources.resx
+│   ├── Resources.Designer.cs
+│   ├── Settings.settings
+│   └── Settings.Designer.cs
+│
+├── README.md                         (Project documentation)
+├── INSTRUCTIONS.txt                  (This file)
+└── .gitignore                        (Git ignore rules)
+
+===============================================================================
+SYSTEM REQUIREMENTS
+===============================================================================
+
+✓ Windows Operating System (Windows 7 or later)
+✓ Visual Studio 2017 or later (any edition)
+✓ .NET Framework 4.7.2 or later
+
+===============================================================================
+HOW TO USE THE APPLICATION
+===============================================================================
+
+1. ENTER PASSENGER INFORMATION
+   - Name: Type passenger's full name
+   - Gender: Select Male or Female
+   - Age: Enter passenger's age (0-120)
+   - Category: Choose One, Two, or Three
+   - Distance: Enter travel distance in kilometers
+
+2. CLICK "CALCULATE" BUTTON
+   - The system will validate all inputs
+   - Price will be calculated automatically
+   - A summary window will appear showing the final price
+
+3. VIEW TICKET SUMMARY
+   - Passenger details will be displayed
+   - Final price shown after discounts
+   - Click OK to close the summary
+
+4. USE "CLEAR" BUTTON
+   - Clears all input fields
+   - Ready for next calculation
+
+5. USE "EXIT" BUTTON
+   - Confirmation dialog appears
+   - Click Yes to exit the application
+
+===============================================================================
+PRICING RULES
+===============================================================================
+
+CATEGORY PRICING:
+-----------------
+Category One   → R20 per kilometer
+Category Two   → R35 per kilometer
+Category Three → R50 per kilometer
+
+DISCOUNT RULES:
+--------------
+Age < 12 years → Ticket is FREE (R0.00)
+Female         → 50% discount applied
+
+CALCULATION:
+-----------
+Base Price = Category Rate × Distance
+Final Price = Base Price (after age and gender discounts)
+
+===============================================================================
+TEST CASES FOR VERIFICATION
+===============================================================================
+
+Test 1: Child (Free Ticket)
+---------------------------
+Name: John
+Gender: Male
+Age: 10
+Category: One
+Distance: 50 km
+Expected Result: R0.00 (FREE)
+
+Test 2: Female Discount
+----------------------
+Name: Sarah
+Gender: Female
+Age: 25
+Category: One
+Distance: 100 km
+Expected Result: R1000.00 (50% discount applied)
+
+Test 3: Standard Male
+--------------------
+Name: Mike
+Gender: Male
+Age: 30
+Category: Two
+Distance: 50 km
+Expected Result: R1750.00
+
+Test 4: Female Child (Free takes priority)
+-----------------------------------------
+Name: Lisa
+Gender: Female
+Age: 10
+Category: Three
+Distance: 50 km
+Expected Result: R0.00 (FREE - age rule takes priority)
+
+Test 5: Standard Calculation
+---------------------------
+Name: Tom
+Gender: Male
+Age: 45
+Category: Three
+Distance: 100 km
+Expected Result: R5000.00
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+PROBLEM: Project won't open in Visual Studio
+SOLUTION: 
+- Ensure you're opening the .sln file, not the .csproj
+- Update Visual Studio to the latest version
+- Install .NET Framework 4.7.2 or later
+
+PROBLEM: Build errors appear
+SOLUTION:
+- Right-click on the solution
+- Select "Clean Solution"
+- Then select "Rebuild Solution"
+
+PROBLEM: Form doesn't display
+SOLUTION:
+- Close and reopen Form1.cs in the designer
+- Rebuild the project
+- Check that all .resx files are included
+
+PROBLEM: Application crashes on calculation
+SOLUTION:
+- Verify all inputs are valid
+- Check that validation logic is working
+- Look at the error message for details
+
+===============================================================================
+GITHUB SETUP (FOR GROUP PROJECT)
+===============================================================================
+
+1. CREATE REPOSITORY
+   - One member creates a new GitHub repository
+   - Name it: TicketApplicationSystem
+
+2. INITIALIZE GIT IN PROJECT FOLDER
+   Open Command Prompt in the project folder:
+   
+   git init
+   git add .
+   git commit -m "Initial commit - Ticket Application System"
+   git branch -M main
+   git remote add origin [YOUR-GITHUB-URL]
+   git push -u origin main
+
+3. INVITE TEAM MEMBERS
+   - Go to repository Settings
+   - Click "Collaborators"
+   - Add each team member's GitHub username
+
+4. CREATE BRANCHES
+   Each member creates their own branch:
+   
+   git checkout -b Dev-ui-design-YourName
+   git checkout -b Dev-logic-module-YourName
+   git checkout -b Dev-testing-docs-YourName
+   git checkout -b Dev-project-management-YourName
+
+5. MAKE COMMITS
+   After making changes:
+   
+   git add .
+   git commit -m "Clear description of changes"
+   git push origin [your-branch-name]
+
+===============================================================================
+SUBMISSION CHECKLIST
+===============================================================================
+
+Before submitting, ensure you have:
+
+✓ GitHub repository link
+✓ Working application (tested)
+✓ All team members have commits
+✓ Screenshots with date/time visible
+✓ Project report (PDF) with:
+  - Group member names and roles
+  - Test results
+  - GitHub activity evidence
+  - Screenshots
+  - Challenges and conclusion
+✓ Individual signed declarations
+
+===============================================================================
+SUPPORT AND CONTACT
+===============================================================================
+
+Project Lead Developer: Lusukama Selemani
+Submission Method: GitHub link
+Due: 24 April 2026 @ 11:00 AM
+
+For technical issues:
+- Check README.md for detailed documentation
+- Review project requirements in the PDF
+- Ask your team members
+- Contact your instructor
+
+===============================================================================
+GOOD LUCK WITH YOUR PROJECT!
+===============================================================================
