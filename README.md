@@ -3,7 +3,6 @@
 ## Project Information
 - **Course**: Software design and testing C# (SDT621)
 - **Module Code**: SDT621
-- **NQF Level**: 6
 - **Project Type**: Group Software Development Project (Week 2 Friday Project)
 - **Minimum Group Members**: 4 students
 
@@ -77,7 +76,7 @@ TicketApplicationSystem/
 
 ## Group Member Roles
 
-### Member 1: Project Manager / GitHub Coordinator
+### Member Ehan : Project Manager / GitHub Coordinator
 - Create GitHub repository
 - Invite group members
 - Create project structure
@@ -86,21 +85,21 @@ TicketApplicationSystem/
 - Maintain README file
 - Coordinate submission
 
-### Member 2: UI Developer
+### Member Daniel : UI Developer
 - Design Windows Form interface
 - Add all controls (labels, textboxes, radiobuttons, combobox, buttons)
 - Apply professional styling
 - Ensure responsive layout
 - Properly name all controls
 
-### Member 3: Logic Developer
+### Member Ehan : Logic Developer
 - Write `TicketCalculator.cs` class
 - Implement pricing logic
 - Apply discount rules
 - Wire up button events
 - Implement validation logic
 
-### Member 4: Tester and Documentation Specialist
+### Member Ehan + Daniel : Tester and Documentation Specialist
 - Test all functionality
 - Verify calculations
 - Document test cases
@@ -118,14 +117,12 @@ Each team member works on their own branch:
 - `Dev-project-management-[YourName]`
 
 ### Good Commit Message Examples
-✅ "Created Windows Form layout"
-✅ "Added gender selection controls"
-✅ "Implemented category pricing logic"
-✅ "Applied female discount rule"
-✅ "Added validation for distance input"
-✅ "Created test cases documentation"
-
-❌ Avoid: "update", "changes", "fixed stuff"
+   "Created Windows Form layout"
+   "Added gender selection controls"
+   "Implemented category pricing logic"
+   "Applied female discount rule"
+   "Added validation for distance input"
+   "Created test cases documentation"
 
 ## Testing Instructions
 
@@ -154,11 +151,11 @@ Each team member works on their own branch:
 ## Input Validation
 
 The application validates:
-- ✅ Name is not empty
-- ✅ Age is numeric (0-120)
-- ✅ Distance is numeric and > 0
-- ✅ Category is selected
-- ✅ Gender is selected
+-  Name is not empty
+-  Age is numeric (0-120)
+-  Distance is numeric and > 0
+-  Category is selected
+-  Gender is selected
 
 ## Deliverables Checklist
 
@@ -184,10 +181,10 @@ The application validates:
 - .NET Framework 4.7.2 or later
 
 ### Code Standards
-- ✅ Proper naming conventions (camelCase for variables, PascalCase for methods)
-- ✅ Comments explaining logic
-- ✅ Meaningful variable names
-- ✅ Clean, readable code structure
+-  Proper naming conventions (camelCase for variables, PascalCase for methods)
+-  Comments explaining logic
+-  Meaningful variable names
+-  Clean, readable code structure
 
 ## Troubleshooting
 
@@ -221,6 +218,6 @@ For questions about the project requirements, refer to:
 - Your course instructor: Lusukama Selemani
 
 ---
-**Hand Out Date**: 24 April 2026 @ 09:30 AM  
+**Hand Out Date**: 22 April 2026 @ 09:30 AM  
 **Hand In Date**: 24 April 2026 @ 11:00 AM  
 **Submission**: via GitHub link
